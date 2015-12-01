@@ -1,0 +1,7 @@
+node_modules/
+build/
+npm-debug.log
+coverage/
+tmp/
+API.md
+dist/

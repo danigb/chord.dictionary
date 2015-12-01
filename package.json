@@ -1,0 +1,40 @@
+{
+  "name": "chord.dictionary",
+  "version": "0.0.1",
+  "description": "A music chord dictionary",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm test && npm run docs && npm run coverage && npm run disc && npm run dist",
+    "test": "vows --spec test/*.js",
+    "docs": "documentation -f md > API.md",
+    "dist": "browserify index.js | uglifyjs > dist/chord.dictionary.min.js&& ls -hall dist/",
+    "disc": "browserify --full-paths index.js | uglifyjs | discify > tmp/disc.html&& open tmp/disc.html",
+    "coverage": "istanbul cover vows test/*.js",
+    "cover": "npm run coverage && open ./coverage/lcov-report/index.html",
+    "climate": "npm run coverage && npm run codeclimate",
+    "codeclimate": "CODECLIMATE_REPO_TOKEN= codeclimate-test-reporter < coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigb/chord.dictionary.git"
+  },
+  "keywords": [
+    "music",
+    "chord",
+    "chords",
+    "dictionary",
+    "tonal"
+  ],
+  "author": "danigb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danigb/chord.dictionary/issues"
+  },
+  "homepage": "https://github.com/danigb/chord.dictionary#readme",
+  "devDependencies": {
+    "vows": "^0.8.x"
+  },
+  "dependencies": {
+    "tonal.notation": "0.0.x"
+  }
+}
