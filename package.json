@@ -8,7 +8,7 @@
     "test": "vows --spec test/*.js",
     "docs": "documentation -f md > API.md",
     "dist": "browserify index.js | uglifyjs > dist/chord.dictionary.min.js&& ls -hall dist/",
-    "disc": "browserify --full-paths index.js | uglifyjs | discify > tmp/disc.html&& open tmp/disc.html",
+    "disc": "browserify --full-paths index.js | uglifyjs | discify > tmp/disc.html",
     "coverage": "istanbul cover vows test/*.js",
     "cover": "npm run coverage && open ./coverage/lcov-report/index.html",
     "climate": "npm run coverage && npm run codeclimate",
@@ -35,6 +35,7 @@
     "vows": "^0.8.x"
   },
   "dependencies": {
+    "tonal.dictionary": "0.0.4",
     "tonal.notation": "0.0.x"
   }
 }
