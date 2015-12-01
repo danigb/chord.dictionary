@@ -1,7 +1,7 @@
 'use strict'
 
 var chords = require('./chords.json')
-var dictionary = require('tonal.dictionary/dictionary')
+var dictionary = require('music.dictionary')
 
 /**
  * A chord dictionary. Get chord data from a chord name.

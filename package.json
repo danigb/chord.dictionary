@@ -35,7 +35,7 @@
     "vows": "^0.8.x"
   },
   "dependencies": {
-    "tonal.dictionary": "0.0.4",
+    "music.dictionary": "0.0.x",
     "tonal.notation": "0.0.x"
   }
 }
