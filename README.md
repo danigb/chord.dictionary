@@ -1,4 +1,4 @@
-  # chord.dictionary
+# chord.dictionary
 
 [![Build Status](https://travis-ci.org/danigb/chord.dictionary.svg?branch=master)](https://travis-ci.org/danigb/chord.dictionary)
 [![Climate](https://codeclimate.com/github/danigb/chord.dictionary/badges/gpa.svg)](https://codeclimate.com/github/danigb/chord.dictionary)
@@ -7,7 +7,7 @@
 [![license](https://img.shields.io/npm/l/chord.dictionary.svg)](https://www.npmjs.com/package/chord.dictionary)
 [![tonal](https://img.shields.io/badge/tonal-chord.dictionary-yellow.svg)](https://www.npmjs.com/browse/keyword/tonal)
 
-A dictionary of music chords. A [json file]() with chord definitions (currently 106) and a wrapper function:
+A dictionary of music chords. This contains a [json file](https://github.com/danigb/chord.dictionary/blob/master/chords.json) with chord definitions (currently 106), and a javascript function to access them:
 
 ```js
 var chord = require('chord.dictionary')
@@ -25,7 +25,7 @@ Install via npm: `npm install --save chord.dictionary`. For browsers use the bro
 
 ## Usage
 
-You can get or require [json data file]() directly:
+You can get or require [json data file](https://github.com/danigb/chord.dictionary/blob/master/chords.json) directly:
 
 ```js
 var data = require('chord.dictionary/chords.json')
