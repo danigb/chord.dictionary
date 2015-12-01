@@ -1,6 +1,6 @@
 {
   "name": "chord.dictionary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A music chord dictionary",
   "main": "index.js",
   "scripts": {
